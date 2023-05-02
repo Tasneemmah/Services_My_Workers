@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Amiri:ital,wght@0,400;0,700;1,700&family=Dancing+Script:wght@400;600;700&family=Noto+Naskh+Arabic:wght@400;600;700&family=Paytone+One&display=swap');
+
+body {
+    direction: rtl;
+    font-family: sans-serif;
+    text-align: right;
+}
+
+.navbar {
+    background-color: rgb(231, 244, 250);
+    box-shadow: 2px 1px 4px rgb(231, 244, 250);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.home {
+    height: 500px;
+    background-image: url("image/still-life-office-cleaning-process\ \(15\).jpg");
+    background-size: cover;
+    padding: 1px;
+    min-height: 100%;
+}
+
+.button {
+    margin-top: 1rem;
+    color: #000000;
+    padding: 0.3em 1.3em;
+    font-size: 16px;
+    border-radius: 0.5em;
+    background: rgb(231, 244, 250);
+    border: 1px solid #0a89b8;
+    box-shadow: 13px 13px 100px #000000;
+}
+
+.home-item {
+    width: 50%;
+    margin-right: auto;
+    /* margin-top: 10%; */
+}
+
+@media (max-width:768px) {
+    .home {
+        height: 400%;
+    }
+
+    .home-item {
+        width: 100%;
+    }
+}
+
+.home-item h2 {
+    color: #000000;
+    font-size: 45px;
+}
+
+.home-item p {
+    color: rgb(0, 0, 0);
+    box-shadow: 5px 5px 10px #636161;
+    padding: 10px;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.home-item {
+    width: 50%;
+    margin-right: auto;
+    /* margin-top: 10%; */
+}
+
+.about__item button {
+    margin-bottom: 15px;
+}
+
+.news .news-left {
+    display: flex;
+    align-items: center;
+}
+
+.news .news-left img {
+    max-width: 200px;
+    margin-left: 10px;
+    /* box-shadow: 13px 13px 100px #000000; */
+}
+
+.subscribe {
+    height: 450px;
+    background-image: url("image/still-life-office-cleaning-process.jpg");
+    background-size: cover;
+    padding: 1px;
+    position: relative;
+}
+
+.subscribe__item {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.subscribe__item h2 {
+    font-size: 40px;
+}
+
+.subscribe__item .form {
+    align-items: center;
+}
+
+.subscribe__item .form input {
+    width: 60%;
+}
+
+.subscribe__item button {
+    width: 15%;
+}
+
+/* Create a Parallax Effect */
+.home-1,
+.about-2,
+.news-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+
+    .home-1,
+    .about-2,
+    .news-3 {
+        background-attachment: scroll;
+        min-height: 400px;
+    }
+}
+
+footer {
+    background-color: rgb(212, 236, 255);
+    color: rgb(0, 0, 0);
+    padding: 1px;
+}
+
+footer h3 {
+    background-color: black;
+    color: black;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 0 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.container ul li {
+    margin-right: 20px;
+}
+
+.container ul li:last-child {
+    margin-right: 0;
+}
+
+.container ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer {
+    padding: 0px;
+    background-color: rgb(7, 0, 0);
+    color: black;
+    /* height: 500px; */
+    /* width:300%; */
+    /* max-width:9000px; */
+}

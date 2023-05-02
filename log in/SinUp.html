@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!-- <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600&display=swap"
+    rel="stylesheet"
+  /> -->
+</head>
+<style>
+   body {
+        direction: rtl;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+</style>
+<section class="vh-100" style="background-color:  rgb(201, 227, 240);">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-xl-10">
+        <div class="card" style="border-radius: 1rem;   border-radius: 30px; box-shadow: rgba(0, 0, 0, 0.35) 0px 7px 17px;" >
+          <div class="row g-0">
+            <div class="col-md-6 col-lg-5 d-none d-md-block">
+              <img src="https://img.freepik.com/free-photo/still-life-office-cleaning-process_23-2149343031.jpg?w=360&t=st=1682533363~exp=1682533963~hmac=4992c66842434e5a32973cc0634f17159a97f3a8045b370b5779bd8205b8c2ba"
+                alt="login form" class="img-fluid" style="border-radius: 0 1rem 1rem 0 ; padding-left:23px ; " />
+            </div>
+            <div class="col-md-6 col-lg-7 d-flex align-items-center">
+              <div class="card-body p-4 p-lg-5 text-black">
+
+                <form>
+
+                  <h2 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;" > انضم إلينا </h2>
+                  <p class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;"> التسجيل لإنشاء حسابك    </p>
+
+                  <form id="signupForm" class="mx-1 mx-md-4">
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                      <div class="textbox form-outline flex-fill mb-0">
+                        <label class="form-label" for="form3Example1c"
+                          >الاسم</label
+                        >
+                        <input
+                          type="text"
+                          name="username"
+                          placeholder="أدخل اسمك"
+                          id="form3Example1c"
+                          class="form-control"
+                        />
+                        <div id="nameError" style="display: none; color: red">
+                          الرجاء إدخال اسم صحيح
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <label class="form-label" for="form3Example3c"
+                          >الايميل</label
+                        >
+                        <input
+                          type="text"
+                          name="email"
+                          placeholder="البريد الإلكتروني.@mail.com"
+                          id="form3Example3c"
+                          class="form-control"
+                        />
+                        <div
+                          id="emailError"
+                          style="display: none; color: red"
+                        >
+                        الرجاء إدخال عنوان البريد الإلكتروني
+                      </div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <label class="form-label" for="form3Example4c"
+                          >كلمة السر</label
+                        >
+                        <input
+                          type="password"
+                          placeholder="أدخل كلمة المرور الخاصة بك"
+                          name="password"
+                          id="form3Example4c"
+                          class="form-control"
+                        />
+                        <div
+                          id="passwordError"
+                          style="display: none; color: red"
+                        >
+                        أدخل كلمة مرور أكثر من 8 أحرف <br />
+                        مع رقم 1 على الأقل <br />
+                        الأحرف الكبيرة والأحرف الخاصة
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                    <div>
+                  <center> <a href="../../../index.html">
+                      <button class="btn btn-outline-info mr-2 mx-4" style="
+                          /* font-weight: bold; */
+                          background-color:  rgb(201, 227, 240);
+                          border: solid 1px #044164;
+                          color: #000000;
+                        ">
+                        تسجيل 
+                      </button>
+                    </a>
+                    <div class="form-check d-flex flex-column mb-5">
+                      <input
+                        class="form-check-input me-2"
+                        type="checkbox"
+                        name="checked"
+                        value="Checked"
+                        id="checkbox"
+                      />
+                      <label
+                        style="display: block"
+                        class="form-check-label"
+                        for="checkbox"
+                        
+                      >
+                      أوافق على جميع البيانات 
+                        <a href="#!" style="color: #044164;" >شروط الخدمة
+                          هل لديك حساب بالفعل؟ </a >
+                      </label>
+                      <p class="small fw-bold mt-2 pt-1 mb-0 mx-auto " >
+                        هل لديك حساب بالفعل؟
+                        <a href="./login.html" class="link-danger mt-2 "style="color: #044164;"
+                          >تسجيل دخول</a
+                        >
+                      </p >
+                  </center> 
+                  </div>
+                
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Section: Design Block -->
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+
+  <script src="../../js/login.js"></script>
+  <!-- <script src="../../js/login.js"></script> -->
+</body>
+
+</html>
+
